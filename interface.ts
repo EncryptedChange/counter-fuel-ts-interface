@@ -7,7 +7,7 @@ const executoor = async () => {
     // define contract that will be called
     const contract = new Contract('0x2edbc4b7de15e8936f1b34fd7894325fb61ea3478a5192318c3a86188a56b1bd', abi, provider);
     
-    // call contract and simulate incrementing the counts by 1
+    // call contract and simulate incrementing the count by 1
     const abc = await contract.functions.increment(1).dryRun();
     // call contract and get the actual current counter number
     const xyz = await contract.functions.get().get();
